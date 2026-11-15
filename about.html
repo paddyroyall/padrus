@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <title>Paddy Royall about</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Covers unvisited, visited, hover, and active states */
+        a, a:visited, a:hover, a:active {
+          color: inherit;          /* Uses the surrounding text color instead of blue/purple */
+          text-decoration: none;   /* Removes the underline */
+        }
+
+        /* Set the uploaded image as the full-screen background */
+        body {
+            background-color: rgb(0, 6, 37); /* Sets the solid dark blue background */
+            background-size: cover;          /* Cover the entire screen */
+            background-position: center;      /* Center the image */
+            background-repeat: no-repeat;    /* Prevent tiling */
+            background-attachment: fixed;     /* Keep background fixed on scroll */
+            font-family: Arial, sans-serif;
+            color: #ffffff;                  /* Text color */
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+
+        /* Main outer wrapper stacking all 3 rows vertically */
+                .layout-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem; /* Distance between each row */
+                    align-items: center;
+                    width: 100%;
+                    max-width: 1200px;
+                    margin-top: 0.5rem;
+                }
+
+                /* Common Card Styling
+                background color very dark midnight*/
+                .card {
+                    background-color: rgba(0, 6, 37, 0.25);
+                    padding: 0.5rem;
+                    border-radius: 6px;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+                    overflow: auto;
+                }
+
+                /* ROW 1: 6 Small Boxes */
+                .top-row {
+                    display: flex;
+                    gap: 0.5rem;
+                    width: 100%;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                .top-box {
+                    flex: 1;
+                    min-width: 60px;
+                    height: 30px; /* Control height of top 6 boxes */
+                    text-align: center;
+                }
+
+
+                /* =========================================================
+                WIDE BANNER IMAGE (Below Top Row)
+                ========================================================= */
+                .wide-banner {
+                  width: 100%;
+                  height: 350px; /* Control height of the wide banner here */
+                  border-radius: 12px;
+                  overflow: hidden;
+                  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+                }
+
+                .wide-banner img {
+                  width: 100%;
+                  height: 80%;
+                  object-fit: cover; /* Ensures the image fits nicely without stretching */
+                  display: block;
+                }
+
+                /* =========================================================
+                SECTION 2: MIDDLE SECTION (3 Rows of Text Left + Image Right)
+                ========================================================= */
+                .middle-section {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 2rem; /* Space between the 3 middle rows */
+                  width: 100%;
+                }
+
+                .feature-row {
+                  display: flex;
+                  gap: 2rem;
+                  width: 100%;
+                  justify-content: center;
+                  align-items: stretch; /* Ensures text box and image box match height */
+                  flex-wrap: wrap;
+                }
+
+                .text-side {
+                  flex: 1;
+                  min-width: 400px;
+                  height: 250px; /* Control height of the middle rows here */
+                }
+
+                .image-side {
+                  flex: 1;
+                  min-width: 300px;
+                  height: 250px; /* Match height with .text-side */
+                  border-radius: 12px;
+                  overflow: hidden;
+                  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+                }
+
+                .image-side img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; /* Ensures the image fills the box cleanly without stretching */
+                  display: block;
+                }
+
+
+                /* ROW 3: 3 Bottom Boxes */
+                .bottom-row {
+                    display: flex;
+                    gap: 1.5rem;
+                    width: 100%;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                .small-box {
+                    flex: 1;
+                    min-width: 100px;
+                    height:    60px; /* Control height of top 6 boxes */
+                    text-align: center;
+                }
+
+                .bottom-box {
+                    flex: 1;
+                    min-width: 250px;
+                    height:    100px; /* Control height of bottom 3 boxes */
+                }
+
+                /* Typography */
+                h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+                h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+                p { font-size: 0.95rem; line-height:   1.4; }
+            </style>
+        </head>
+
+        <body>
+
+        <div class="layout-wrapper">
+
+                <!-- ROW 1: 6 BOXES -->
+                <div class="top-row">
+                    <div class="card top-box"><h3>About</h3></div>
+                    <div class="card top-box"><h3>News</h3></div>
+                    <div class="card top-box"><h3>Group</h3></div>
+                    <div class="card top-box"><h3>Positions available</h3></div>
+                    <div class="card top-box"><h3><a href="publications.html"> Publications  </a></h3></div>
+                </div>
+
+                <!-- WIDE BANNER IMAGE -->
+                <div class="wide-banner">
+                  <img src="img/figLengthscalesWeb.jpg" alt="We study collective behaviour across a ramge of lengthscales ">
+                </div>
+
+                <!-- SECTION 2: 3 ROWS OF TEXT (LEFT) + IMAGE (RIGHT) -->
+                <div class="middle-section">
+
+                  <!-- Middle Row 1 -->
+                  <div class="feature-row">
+                    <div class="card text-side">
+                      <h3>How do we address longstanding challenges?</h3>
+                      <p>We study how the interactions between individual constituents give rise to collective behaviour
+                      using a multidisciplinary approach.
+                      We choose suitable systems across a vast range of lengthscales to realise phenomena of interest.
+                      Depending on the system this can involve synthesis of the colloids, 3d imaging with confocal
+                      microscopy or STED &lsquo;&lsquo;nanoscopy&rsquo;&rsquo; and/or computer simulation. We analyse
+                      the data with our bespoke <a href="tcc.html"> topological cluster classification </a>.
+                      <br><br>
+                      This page describes the technique of confocal microscopy and real space analysis of Colloidal
+                      colloidal systems. This is just a part of what we do --
+                      we also <a href="fish.html"> rear zebrafish </a> and express proteins.
+                      </p>
+
+                    </div>
+
+                    <div class="image-side">
+                      <img src="img/synthesis.jpg" alt="Synthesis of model colloids">
+                    </div>
+                  </div>
+
+                  <!-- Middle Row 2 -->
+                  <div class="feature-row">
+                    <div class="card text-side">
+                      <h3>Synthesis</h3>
+                      <p>The colloidal systems we use have a degree of functionality that is impossible to buy.
+                      So we synthesise in-house which enables us to tailor suitable nano-architectures.
+                      In particular, the colloids are fluorescently labelled
+                      and refractive index-and density-matched to the solvent. Our 3d induced charge electrophoresis
+                      active colloids are furthermore functionalised with chromium or gold.
+                      </p>
+                    </div>
+                  <div class="image-side">
+                    <img src="img/figSTED.jpg" alt="STED nanoscopy">
+                </div>
+            </div>
+
+            <!-- Middle Row 3 -->
+            <div class="feature-row">
+                <div class="card text-side">
+                  <h3>3d Imaging</h3>
+                  <p>Almost all materials are three-dimensional, and yet the vast majority of microscopy
+                    technqiues image in 2d. Confocal microscopy is the only technique that enables 3d microscopy
+                    at a rate fast enough to follow dynamics in real tine. It is therefore central to the challenges of
+                    <a href="nucleation.html">nucleation</a> and the <a href="glass.html">glass transition</a>.
+                    and the glass transition.
+                    <br>
+                    An exciting development is <b>ST</b>imulated <b>E</b>mission via <b>D</b>epletion (STED)
+                    which seemingly defies the laws of diffraction and for which its inventor, Stefan Hell,
+                    shared the <a href="https://www.nobelprize.org/prizes/chemistry/2014/summary/">
+                    Nobel Prize in Chemistry.</a>
+                    By overlaying a diffraction-limited probe beam (blue) with a doughnut-shaped depletion beam
+                    (pink) which depletes the fluorescent molecules to their ground state so that they do not emit light,
+                    only in the middle is fluorescent light emitted, so the probe beam is effectively sharpened.
+                    The resolution of the STED technique is in principle unlimited.
+                  </p>
+                </div>
+                <div class="image-side">
+                    <img src="img/fccColloids.gif" alt="plane of self-assembled colloidal fcc crystal">
+                </div>
+            </div>
+
+            <!-- Middle Row 4 -->
+            <div class="feature-row">
+                <div class="card text-side">
+                  <h3>Particle Tracking</h3>
+                  <p>The true power of the confocal microscopy technique is realised by tracking the
+                    coordinates of the constituent particles -- &lsquo;&lsquo;particle resolved studies&rsquo;&rsquo;.
+                    The red dots in the centres of the colloidal partiiles in the plane of the face centred cubic crystal
+                    (right) are the particle coordinates.
+                  </p>
+                  <br><br>
+                  <p>
+                    We have recently developed machine learning method which expklciitly tackles the challenges of high-resolution
+                    confocal and STED real space analysis.
+                    <a href="img/publications/2025/kawafiRoyallColloidoscopeSoftMatter2025.pdf" target="_blank">Link to paper.</a>
+                  </p>
+                </div>
+                <div class="image-side">
+                    <img src="img/mayoMotel.jpg" alt="determining colloid coordinates">
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+                <!-- ROW 3: 3 BOXES -->
+                <div class="bottom-row">
+                  <div class="card small-box"><h3><a href="nucleation.html">Nucleation</a></h3></div>
+                  <div class="card small-box"><h3><a href="glass.html">Glass Transition</a></h3><p></p></div>
+                  <div class="card small-box"><h3><a href="gels.html">Gel Collapse</a></h3><p></p></div>
+                  <div class="card small-box"><h3>Fish</h3><p></p></div>
+                  <div class="card small-box"><h3>Facemasks</h3><p></p></div>
+                  <div class="card small-box"><h3>TCC</h3><p></p></div>
+                </div>
+
+            </div>
+
+        </body>
+        </html>
