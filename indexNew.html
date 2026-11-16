@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <title>Paddy Royalltop page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Covers unvisited, visited, hover, and active states */
+        a, a:visited, a:hover, a:active {
+          color: inherit;          /* Uses the surrounding text color instead of blue/purple */
+          text-decoration: none;   /* Removes the underline */
+        }
+
+        /* Set the uploaded image as the full-screen background */
+        body {
+            background-image: url('img/roscoffPhotoCropped2.jpg'); /* Replace with your image file name */
+            background-size: cover;          /* Cover the entire screen */
+            background-position: center;      /* Center the image */
+            background-repeat: no-repeat;    /* Prevent tiling */
+            background-attachment: fixed;     /* Keep background fixed on scroll */
+            font-family: Arial, sans-serif;
+            color: #ffffff;                  /* Text color */
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+
+        /* Main outer wrapper stacking all 3 rows vertically */
+                .layout-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6rem; /* Distance between each row */
+                    align-items: center;
+                    width: 100%;
+                    max-width: 1200px;
+                    margin-top: 0.5rem;
+                }
+
+                /* Header Container */
+                #header-placeholder {
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                }
+
+                #header-placeholder table {
+                  border-collapse: collapse;
+                  max-width: 100%;
+                }
+
+                #header-placeholder img {
+                  display: block; /* Removes tiny gap below table images */
+                  max-width: 100%;
+                  height: auto;
+                }
+
+                /* Common Card Styling */
+                .card {
+                    background-color: rgba(0, 0, 0, 0.25);
+                    padding: 0.5rem;
+                    border-radius: 6px;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+                    overflow: auto;
+                }
+
+                /* ROW 1: 6 Small Boxes */
+                .top-row {
+                    display: flex;
+                    gap: 0.5rem;
+                    width: 100%;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                .top-box {
+                    flex: 1;
+                    min-width: 60px;
+                    height: 30px; /* Control height of top 6 boxes */
+                    text-align: center;
+                }
+
+                /* ROW 2: 2 Custom Boxes */
+                .middle-row {
+                    display: flex;
+                    gap: 4rem;
+                    width: 100%;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                .box-1 {
+                    width:  425px;  /* Control width of middle left box */
+                    height: 500px; /* Control height of middle left box */
+                }
+
+                .box-2 {
+                    width:  500px;  /* Control width of middle right box */
+                    height: 500px; /* Control height of middle right box */
+                }
+
+                /* ROW 3: 3 Bottom Boxes */
+                .bottom-row {
+                    display: flex;
+                    gap: 1.5rem;
+                    width: 100%;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                .small-box {
+                    flex: 1;
+                    min-width: 100px;
+                    height:    60px; /* Control height of top 6 boxes */
+                    text-align: center;
+                }
+
+                .bottom-box {
+                    flex: 1;
+                    min-width: 250px;
+                    height:    100px; /* Control height of bottom 3 boxes */
+                }
+
+                /* Typography */
+                h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+                h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+                p { font-size: 0.95rem; line-height:   1.4; }
+            </style>
+        </head>
+        <body>
+
+            <div class="layout-wrapper">
+                <!-- 1. TITLE HEADER LOADED HERE -->
+                <div id="header-placeholder"></div>
+
+                <!-- ROW 1: 6 BOXES -->
+                <div class="top-row">
+                  <div class="card top-box"><h3><a href="publications.html"> About </a></h3></div>
+                  <div class="card top-box"><h3>Systems</h3></div>
+                  <div class="card top-box"><h3>News</h3></div>
+                  <div class="card top-box"><h3>Group</h3></div>
+                  <div class="card top-box"><h3>Positions available</h3></div>
+                  <div class="card top-box"><h3><a href="publications.html"> Publications </a></h3></div>
+                </div>
+
+                <!-- ROW 2: 2 BOXES -->
+                <div class="middle-row">
+                    <div class="card box-1">
+                        <h2>Physics of the everyday</h2>
+                        <p>The three familar states of matter have been studied for millenia,
+                        and while gases have been understood for centuries, and crystals for over a century,
+                        the liquid state has remained elusive. Yet it accounts most of the earth's surface.</p>
+                        <br>
+                        <p>It is only in the last few decades that an understanding of equilibrium lquids hase been achieved.
+                        And lquids are rarely in equilibrium.</p>
+                        <br>
+                        <p>We address major long-standing challenges in liquids and related systems such as colloids
+                        using an array of experimental and computational techniques. Surprisingly, strikingly similar phenomena occur across
+                        a vast range of lengthscales from molecules to mesoscopic colloids and even animals.</p>
+                        <br>
+                        <p>Backrgound: thanks to all those who made
+                        &lsquo;&lsquo;Crystallisation and Self-Assembly: from Soft Matter to Pharmaceuticals to Biomineralisation&rsquo;&rsquo; such a success.
+                        <a href="https://crystalsandsea.sciencesconf.org/"> Link to workshop website.</a>
+                        </p>
+
+                      </div>
+                    <div class="card box-2">
+                        <h2>Three longstanding challenges</a></h2>
+                        <p><strong><a href="Work_nucleation.html">Crystal nucleation.</strong>
+                        Crystallisation is a truly everyday phenomenon and the rate of nucleation has
+                        major implications in climate change modelling. Yet is it essentially impossible to predict the rate
+                        of nucleation <em>a priori</em>. One expects that model systems, like hard sphere colloids, would
+                        be an ideal test case but the prediction differs from experiments so much that
+                        that it has been termed &lsquo;&lsquo;the second-largest discrepancy in physics&rsquo;&rsquo;.
+                        <a href="Work_nucleation.html"> Our latest results. </a></p>
+                        <br>
+                        <p><strong><a href="Work_glass.html">The glass transition</a></strong>
+                        by which a liquid solidifies without freezing
+                        is a modern day <em>Scientific Revolution</em> in the sense of
+                        <a href="https://en.wikipedia.org/wiki/Thomas_Kuhn">  Thomas Kuhn. </a>
+                        Our progress in bringing together theories believed to be mutually exclusive is summarised
+                        <a href="Work_glass.html"> here </a>.</p>
+                        <br>
+                        <p><strong><a href="Work_gels.html">Delayed gel collapse</a></strong>
+                        Gels form many everyday products from cosmetics to foods to agrichemicals, often to suppress flow.
+                        Colloidal gels become stronger over time, and then, remarkably they collapse under their own weight
+                        catastrophically after days or even years. We have developed an new
+                        <a href="Work_gels.html"> imaging technique </a> to reveal the mechanism of this mysterious phenomenon.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ROW 3: 3 BOXES -->
+                <div class="bottom-row">
+                  <div class="card small-box"><h3><a href="Work_nucleation.html">Nucleation</a></h3></div>
+                  <div class="card small-box"><h3><a href="Work_glass.html">Glass Transition</a></h3><p></p></div>
+                  <div class="card small-box"><h3><a href="Work_gels.html">Gel Collapse</a></h3><p></p></div>
+                  <div class="card small-box"><h3>Fish</h3><p></p></div>
+                  <div class="card small-box"><h3>Facemasks</h3><p></p></div>
+                  <div class="card small-box"><h3>TCC</h3><p></p></div>
+                </div>
+
+            </div>
+
+            <!-- 2. SCRIPT TO LOAD titleNew.html -->
+            <script>
+                fetch('titleNew.html')
+                .then(response => {
+                  if (!response.ok) throw new Error('Could not load titleNew.html');
+                  return response.text();
+                })
+                .then(data => {
+                  document.getElementById('header-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+            </script>
+
+        </body>
+        </html>
