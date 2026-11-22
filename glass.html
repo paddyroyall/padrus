@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Paddy Royall - Glass Transition</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Covers unvisited, visited, hover, and active states */
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        /* Solid dark navy background matching publications.html */
+        body {
+            background-color: rgb(0, 6, 37);
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+
+        /* Main outer wrapper stacking all rows vertically */
+        .layout-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 0.5rem;
+        }
+
+        /* Header Banner Container matched to publications.html */
+        .header-banner {
+            display: flex;
+            gap: 4rem;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-col-1 {
+            width: 425px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-col-2 {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-banner img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Common Card Styling */
+        .card {
+            background-color: rgba(255, 255, 255, 0.06);
+            padding: 0.75rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* ROW 1: Top Boxes */
+        .top-row {
+            display: flex;
+            gap: 0.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .top-box {
+            flex: 1;
+            min-width: 50px;
+            height: 35px;
+            text-align: center;
+            padding: 0.4rem;
+        }
+
+        /* =========================================================
+           MAIN CONTENT (Aligned to Match Header/Publications)
+           ========================================================= */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+            align-items: center;
+        }
+
+        .content-card {
+            width: 100%;
+            max-width: 965px;
+            padding: 1.5rem 2rem;
+        }
+
+        .content-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .content-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .content-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .figure-box {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.04);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+
+        .ref-list {
+            padding-left: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .ref-list li {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .ref-list a {
+            color: #7cc4ff;
+            text-decoration: underline;
+            margin-left: 0.25rem;
+        }
+
+        .ref-list a:hover {
+            color: #ffffff;
+        }
+
+        /* ROW 3: Bottom Boxes */
+        .bottom-row {
+            display: flex;
+            gap: 1.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 965px;
+        }
+
+        .small-box {
+            flex: 1;
+            min-width: 100px;
+            height: 60px;
+            text-align: center;
+        }
+
+        /* Typography */
+        h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+  </style>
+</head>
+
+<body>
+
+<div class="layout-wrapper">
+
+      <!-- ROW 1: TOP BOXES -->
+      <div class="top-row">
+        <div class="card top-box"><h3><a href="about.html">        About        </a></h3></div>
+        <div class="card top-box"><h3><a href="systems.html">      Systems      </a></h3></div>
+        <div class="card top-box"><h3><a href="news.html">         News         </a></h3></div>
+        <div class="card top-box"><h3><a href="group.html">        Group        </a></h3></div>
+        <div class="card top-box"><h3><a href="publications.html"> Publications </a></h3></div>
+      </div>
+
+      <!-- HEADER IMAGES -->
+      <div class="header-banner">
+          <div class="header-col-1">
+              <a href="indexNew.html">
+                  <img src="img/paddyRoyall.jpg" width="402" height="156" alt="Paddy Royall">
+              </a>
+          </div>
+          <div class="header-col-2">
+              <img src="img/smile.gif" width="575" height="183" alt="Smile">
+          </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="content-section">
+
+          <div class="card content-card">
+              <h2>The Glass Transition</h2>
+
+              <p>
+                Famously described by Nobel Laureate Philip Anderson as &quot;the deepest problem in solid state physics&quot;,
+                the mechanism by which the viscosity of supercooled liquids increases by many orders of magnitude
+                is a <em>scientific revolution</em> in the sense of
+                <a href="https://en.wikipedia.org/wiki/The_Structure_of_Scientific_Revolutions">Thomas Kuhn</a>.
+                Our understanding of the glass transition
+                is hampered by the difficulty in discriminating apparently incompatible theoretical approaches
+                which nevertheless provide equally good descriptions of experimental data: which theory should we believe?
+              </p>
+
+              <p>
+                To answer this question, the challenge lies in equilibrating samples sufficiently high
+                viscosity - and therefore long relaxation times - that experimental or numerical techniques can probe
+                suitable quantities that enable the theories to be discriminated.
+                Recently, considerable progress has been made in obtaining data which can help such discrimination,
+                in both experiments and simulation [1].
+              </p>
+
+              <p>
+                Much of these new data tend to support theories which imagine a thermodynamic origin of the glass transition - in
+                contrast to a predominately dynamic origin [2,3].
+              </p>
+
+              <p>
+                Nevertheless, plenty of compelling evidence in support of dynamic facilitation (which posits that the glass
+                transition is driven by a dynamical phase transition) exists [4], which we have shown can be accessed
+                in experiments [5].
+              </p>
+
+              <div class="figure-box">
+                <img src="img/work/idealGlass.jpg" alt="Glass transition figure">
+              </div>
+
+              <p>
+                Using novel techniques to obtain very deeply supercooled configurations
+                in an atomistic model glassformer, we have made significant progess in addresing this question [1].
+              </p>
+
+              <p>
+                These naturally lend themselves to a determination of the dynamical phase transition of facilitation [9,10].
+                We find that the dynamical phase transition has a lower temperature bound, which we interpret as a critical point [9,11].
+              </p>
+
+              <p>
+                Now our deeply supercooled configurations also give access to the configurational entropy,
+                from which we can locate the Kauzmann temperature [3].
+              </p>
+
+              <p>
+                Remarkably, within the accuracy of our approach, this point where the thermodynamic theories suggest a
+                phase transition lies at the same temperature as the lower critical point of the dynamical transition [11].
+              </p>
+
+              <p>
+                Our findings lead to a path to reconcile the competing thermodynamic, frustration and
+                dynamic interpretations of the glass transition [1,12].
+              </p>
+          </div>
+
+          <div class="card content-card">
+              <h2>References</h2>
+              <ol class="ref-list">
+                <li>
+                  Ortlieb L, Ingebrigtsen TS, Hallett JE, Turci F &amp; Royall CP,
+                  &quot;Probing excitations and cooperatively rearranging regions in deeply supercooled liquids&quot;,
+                  Nature Commun. 14 2621 (2023)
+                  <a href="img/publications/2023/ortliebIngebrigstenHallettTurciIRoyallExcitationsNComms2023.pdf">link to PDF</a>[cite: 3]
+                </li>
+                <li>
+                  Leoni F, Martelli F, Royall CP &amp; Russo J,
+                  &quot;Structural signatures of ultrastability in a deposited glassformer&quot;,
+                  Phys. Rev. Lett. 130 198201 (2023).
+                  <a href="img/publications/2023/leoniRoyallRussoStructuralUltrastabilityPRL2023.pdf">link to PDF</a>[cite: 3]
+                </li>
+                <li>
+                  Luo C, Robinson JF, Pihlajamaa I, Debets VE, Royall CP &amp; Janssen LMC,
+                  &quot;Many-Body Correlations Are Non-negligible in Both Fragile and Strong Glassformers&quot;,
+                  Phys. Rev. Lett. 129 145501 (2022).
+                  <a href="img/publications/2022/luoRobinsonRoyallJanssenManyBodyPRL2022.pdf">link to PDF</a>[cite: 3]
+                </li>
+                <li>
+                  Hallett JE, Turci F &amp; Royall CP,
+                  &quot;The Devil is in the Details: Pentagonal Bipyramids and Dynamic Arrest&quot;,
+                  accepted by J. Stat. Mech.: Theory and Experiment 014001 (2020).
+                  <a href="img/publications/2019/hallettTurciRoyallDevilJStat2019.pdf">link to PDF</a>[cite: 3]
+                </li>
+                <li>
+                  <span>
+                    Ingebrigtsen TS, Dyre JC, Schroder TB and Royall CP,
+                    &quot;Crystallisation Instability in Glassforming Mixtures&quot;,
+                    Phys. Rev. X <strong>9</strong>, 031016, (2019)
+                    <a href="https://journals.aps.org/prx/pdf/10.1103/PhysRevX.9.031016"Download PDF target="_blank">PDF download</a>.
+                  </span>
+                </li>
+                <li>
+                  Royall CP, Turci F, Tatsumi S, Russo J &amp; Robinson J,
+                  &quot;The race to the bottom: approaching the ideal glass?&quot;,
+                  J. Phys.: Condens. Matter 30 363001 (2018).
+                  <a href="https://iopscience.iop.org/article/10.1088/1361-648X/aad10a"Download PDF>Link to paper.</a>
+                </li>
+                <li>
+                  Turci F, Tarjus, G &amp; Royall CP, &quot;From Glass Formation to Icosahedral Ordering by Curving Three-Dimensional Space&quot;, Phys. Rev. Lett., 118, 215501 (2017).
+                  <a href="https://link.aps.org/doi/10.1103/PhysRevLett.118.215501"Download PDF>Link to paper.</a>
+                </li>
+                <li>
+                  Hallett JE, Turci F and Royall CP, &quot;Local structure in deeply supercooled liquids exhibits growing lengthscales and dynamical correlations&quot;, Nature Comms 9 3272 (2018).
+                  <a href="https://www.nature.com/articles/s41467-018-05371-6">Link to paper.</a>
+                </li>
+                <li>
+                  Speck T, Malins, A &amp; Royall CP &quot;First-Order Phase Transition in a Model Glass Former: Coupling of Local Structure and Dynamics&quot; Phys. Rev. Lett. 109, 195703 (2012).
+                  <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.195703"Download PDF>Link to paper.</a>
+                </li>
+                <li>
+                  Pinchaipat R, Campo M, Turci F, Hallett J, Speck T &amp; Royall CP &quot;Experimental Evidence for a Structural-Dynamical Transition in Trajectory Space&quot;, Phys. Rev. Lett., 119, 028004 (2017).
+                  <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.028004"Download PDF>Link to paper.</a>
+                </li>
+                <li>
+                  Turci F, Royall CP &amp; Speck T. &quot;Non-Equilibrium Phase Transition in an Atomistic Glassformer: the Connection to Thermodynamics&quot; Phys. Rev. X, 7 031028 (2017).
+                  <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.7.031028"Download PDF>Link to paper.</a>
+                </li>
+                <li>
+                    Lang D, Scalliet C &amp; Royall CP,
+                    &quot;Anti-correlation between excitations and locally-favored structures in glass-forming systems&quot;,<br>
+                    Phys. Rev. E 111 055415 (2025).
+                    <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.111.055415"Download PDF>Link to paper.</a>
+                </li>
+              </ol>
+          </div>
+
+      </div>
+
+      <!-- ROW 3: BOTTOM BOXES -->
+      <div class="bottom-row">
+        <div class="card small-box"><h3><a href="nucleation.html">Nucleation       </a></h3></div>
+        <div class="card small-box"><h3><a href="glass.html">     Glass Transition </a></h3></div>
+        <div class="card small-box"><h3><a href="gels.html">      Gel Collapse     </a></h3></div>
+        <div class="card small-box"><h3><a href="fish.html">      Fish             </a></h3></div>
+        <div class="card small-box"><h3><a href="facemasks.html"> Facemasks        </a></h3></div>
+        <div class="card small-box"><h3><a href="tcc.html">       TCC              </a></h3></div>
+      </div>
+
+</div>
+
+</body>
+</html>

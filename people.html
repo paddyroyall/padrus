@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Paddy Royall - People</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Covers unvisited, visited, hover, and active states */
+        a, a:visited, a:hover, a:active {
+          color: inherit;          /* Uses surrounding text color */
+          text-decoration: none;   /* Removes underline */
+        }
+
+        /* Solid dark navy background matching about/publications */
+        body {
+            background-color: rgb(0, 6, 37);
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+
+        /* Main outer wrapper stacking all rows vertically */
+        .layout-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 0.5rem;
+        }
+
+        /* Header Banner Container matched to indexNew.html & about.html */
+        .header-banner {
+            display: flex;
+            gap: 4rem;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-col-1 {
+            width: 425px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-col-2 {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-banner img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Common Card Styling */
+        .card {
+            background-color: rgba(255, 255, 255, 0.06);
+            padding: 0.75rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            overflow: auto;
+        }
+
+        /* ROW 1: 6 Small Boxes */
+        .top-row {
+            display: flex;
+            gap: 0.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .top-box {
+            flex: 1;
+            min-width: 50px;
+            height: 35px;
+            text-align: center;
+            padding: 0.4rem;
+        }
+
+        /* Main Content Container Aligned */
+        .content-container {
+            width: 100%;
+            max-width: 965px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .people-card {
+            width: 100%;
+            padding: 1.5rem 2rem;
+        }
+
+        .people-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Centered top banner image card */
+        .title-card {
+            width: 100%;
+            max-width: 965px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .title-card img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        /* Table styling for current team members */
+        .team-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .team-table td {
+            padding: 0.75rem;
+            vertical-align: middle;
+        }
+
+        .photo_box img {
+            border-radius: 4px;
+            display: block;
+        }
+
+        .peopleText {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            color: #ffffff;
+        }
+
+        .f14px {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #7cc4ff;
+        }
+
+        .f15px {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            display: block;
+            color: #7cc4ff;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+            padding-bottom: 0.25rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0.75rem;
+        }
+
+        /* ROW 3: Bottom Boxes */
+        .bottom-row {
+            display: flex;
+            gap: 1.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 965px;
+            margin-top: 2rem;
+        }
+
+        .small-box {
+            flex: 1;
+            min-width: 100px;
+            height: 60px;
+            text-align: center;
+        }
+
+        /* Typography */
+        h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+  </style>
+</head>
+
+<body>
+
+  <div class="layout-wrapper">
+
+        <!-- ROW 1: 6 BOXES -->
+        <div class="top-row">
+          <div class="card top-box"><h3><a href="about.html">About</a></h3></div>
+          <div class="card top-box"><h3>Systems</h3></div>
+          <div class="card top-box"><h3>News</h3></div>
+          <div class="card top-box"><h3>Group</h3></div>
+          <div class="card top-box"><h3>Positions available</h3></div>
+          <div class="card top-box"><h3><a href="publications.html">Publications</a></h3></div>
+        </div>
+
+        <!-- HEADER IMAGES (Matched to indexNew.html) -->
+        <div class="header-banner">
+          <div class="header-col-1">
+              <a href="indexNew.html">
+                  <img src="img/paddyRoyall.jpg" width="402" height="156" alt="Paddy Royall">
+              </a>
+          </div>
+          <div class="header-col-2">
+              <img src="img/smile.gif" width="575" height="183" alt="Smile">
+          </div>
+        </div>
+
+        <!-- CENTERED PEOPLE TITLE IMAGE -->
+        <div class="card title-card">
+            <img src="img/people/people_title.jpg" width="650" height="220" alt="People Title">
+        </div>
+
+        <!-- PEOPLE CONTENT SECTION -->
+        <div class="content-container">
+
+            <!-- Current Group Members -->
+            <div class="card people-card">
+                <h2>Current Group Members</h2>
+                <table class="team-table">
+                    <tr>
+                      <td width="100" class="photo_box"><img src="img/people/Danqi.png" width="100" height="100" alt="Danqi Lang"></td>
+                      <td align="left" valign="middle" class="peopleText">
+                        <span class="f14px">Danqi Lang</span><br>
+                        Masters student<br>
+                        Simulations of glassy liquids
+                      </td>
+                      <td width="40">&nbsp;</td>
+                      <td width="100" class="photo_box"><img src="img/people/Lars.png" width="100" height="100" alt="Lars Kuerten"></td>
+                      <td align="left" valign="middle" class="peopleText">
+                        <span class="f14px">Lars Kuerten</span><br>
+                        PhD student.<br>
+                        Nucleation in hard spheres
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="photo_box"><img src="img/people/Rui.png" width="100" height="100" alt="Rui Cheng"></td>
+                      <td align="left" valign="middle" class="peopleText">
+                        <span class="f14px">Rui Cheng</span><br>
+                        PhD student jointly supervised with Malcolm Fares, Bayer Cropscience.<br>
+                        The mechanism of gel collapse.
+                      </td>
+                      <td>&nbsp;</td>
+                      <td class="photo_box"><img src="img/people/Abraham.png" width="100" height="100" alt="Abraham Mauleon Amieva"></td>
+                      <td align="left" valign="middle" class="peopleText">
+                        <span class="f14px">Abraham Mauleon Amieva</span><br>
+                        Postdoc.<br>
+                        Phase behaviour of novel active matter systems
+                      </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Former Members / Alumni Directory -->
+            <div class="card people-card">
+                <h2>Former Group Members</h2>
+
+                <span class="f15px">Postdoc</span>
+                <p><span class="f14px">Ioatzin Rios de Anda</span><br>
+                  <span class="peopleText">
+                    PhD 2018, <br>
+                    Thesis: <em>Self-Assembly of Multiple Soft Matter Systems</em><br>
+                    Postdoc 2019-2022, <br>
+                    Research Scientist, Syngenta.
+                  </span>
+                </p>
+
+                <p><span class="f14px">Josh Robinson</span><br>
+                  <span class="peopleText">
+                    PhD 2019. <br>
+                    Thesis: <em>Quasi-equilibrium approaches to the high-density liquid</em><br>
+                    Postdoc 2020-2021, <br>
+                    Humboldt Research Fellow 2020-2022, <br>
+                    Postdoc Johannes Gutenberg University Mainz 2022-.
+                  </span>
+                </p>
+
+                <p><span class="f14px">Francesco Turci</span><br>
+                  <span class="peopleText">
+                    Postdoc 2014-2018, <br>
+                    Postdoc University of Bristol 2019-2022, <br>
+                    Lecturer in Physics, University of Bristol, 2023-
+                  </span>
+                </p>
+
+                <p><span class="f14px">Nariaki Sakai</span><br>
+                  <span class="peopleText">
+                    Postdoc 2017-2019, <br>
+                    Postdoc ESPCI Paris 2020-2021, <br>
+                    Research, Saint Gobain, 2022-
+                  </span>
+                </p>
+
+                <p><span class="f14px">Ian Williams</span><br>
+                  <span class="peopleText">
+                    PhD 2014, <br>
+                    Thesis: <em>Colloids in optically defined confinement</em><br>
+                    Postdoc 2013-2014, <br>
+                    Postdoc UCSB 2016-2018, <br>
+                    Postdoc UCL Chemistry 2018-2020, <br>
+                    Postdoc University of Surrey 2020-. <br>
+                    <a href="http://www.ianwilliams.co" target="_blank" style="color: #7cc4ff; text-decoration: underline;">Link to personal page</a>
+                  </span>
+                </p>
+
+                <p><span class="f14px">James Hallett</span><br>
+                  <span class="peopleText">
+                    Postdoc 2015-2018, <br>
+                    Postdoc Oxford University 2018-2021, <br>
+                    <a href="https://www.reading.ac.uk/chemistry/staff/dr-james-hallett" target="_blank" style="color: #7cc4ff; text-decoration: underline;">Lecturer in Physical Chemistry, University of Reading</a> 2022-
+                  </span>
+                </p>
+
+                <p><span class="f14px">Julien Lam</span><br>
+                  <span class="peopleText">
+                    Postdoc 2015-2016<br>
+                    Postdoc with James Lutsko<br>
+                    Postdoctorant CNRS<br>
+                    Université Libre de Bruxelles
+                  </span>
+                </p>
+
+                <span class="f15px">PhD</span>
+                <p><span class="f14px">Katherine Skipper</span><br>
+                  <span class="peopleText">
+                    PhD 2023.<br>
+                    Thesis: <em>Dipolar colloids: Higher-order structure, activity and phase behaviour</em><br>
+                    Scientific Journalism at the Institute of Physics
+                  </span>
+                </p>
+
+                <p><span class="f14px">Wahab Kawafi</span><br>
+                  <span class="peopleText">
+                    PhD 2023.<br>
+                    Thesis: <em>Quantitative 3D Bioimaging Using Machine Learning</em>
+                  </span>
+                </p>
+
+                <p><span class="f14px">Laurent Vaughan</span><br>
+                  <span class="peopleText">
+                    PhD 2023.<br>
+                    Thesis: <em>A Real Space Study of Self-Assembly Mechanisms in Complex Colloidal Systems</em>
+                  </span>
+                </p>
+
+                <p><span class="f14px">Max Kloucek</span><br>
+                  <span class="peopleText">
+                    PhD 2023.<br>
+                    Thesis: <em>Inferring Criticality in Neural Networks</em>
+                  </span>
+                </p>
+
+                <p><span class="f14px">Jingwen Li</span><br>
+                  <span class="peopleText">
+                    PhD 2023.<br>
+                    Thesis: <em>Self-Assembly of Model Isotropic and Anisotropic Colloids and Proteins: a Real Space Analysis</em><br>
+                    Lab teacher and technician, School of Physical Science and Technology, ShanghaiTech University
+                  </span>
+                </p>
+
+                <p><span class="f14px">Levke Ortleib</span><br>
+                  <span class="peopleText">
+                    PhD 2022.<br>
+                    Thesis: <em>Measuring excitations, mobile regions and local structure in deeply supercooled liquids</em>
+                  </span>
+                </p>
+
+                <p><span class="f14px">Fergus Moore</span><br>
+                  <span class="peopleText">
+                    PhD 2022.<br>
+                    Thesis: <em>Crystallisation and Confinement of Mesoscale Active Matter</em>
+                  </span>
+                </p>
+
+                <p><span class="f14px">Yushi Yang</span><br>
+                  <span class="peopleText">
+                    PhD 2022.<br>
+                    Thesis: <em>Observing, Analysing, Modelling, and even Changing the Behaviour of Zebrafish</em><br>
+                    Algorithm developer in MGI Tech, Shanghai
+                  </span>
+                </p>
+
+                <p><span class="f14px">Sian Fussell</span><br>
+                  <span class="peopleText">
+                    PhD 2021.<br>
+                    Thesis: <em>Phase behaviour of temperature responsive microgels</em><br>
+                    Chief Scientific Officer, Albotherm 2021-
+                  </span>
+                </p>
+
+                <p><span class="f14px">Jun Dong</span><br>
+                  <span class="peopleText">
+                    PhD 2020.<br>
+                    Thesis: <em>Microfluidic Emulsification and Force Transmissions in Colloidal Systems</em><br>
+                    Postdoc, Bayer AG 2020-
+                  </span>
+                </p>
+
+                <p><span class="f14px">Nicholas Wood</span><br>
+                  <span class="peopleText">
+                    PhD 2019.<br>
+                    Thesis: <em>Hard Sphere Nucleation Rates</em>
+                  </span>
+                </p>
+
+                <p><span class="f14px">Peter Crowther</span><br>
+                  <span class="peopleText">
+                    PhD 2019.<br>
+                    Thesis: <em>Structure and Lengthscales in Glassy Systems</em><br>
+                    Research Software Engineer at the University of Manchester
+                  </span>
+                </p>
+
+                <p><span class="f14px">Azaima Razali</span><br>
+                  <span class="peopleText">
+                    PhD 2018<br>
+                    Thesis: <em>Self Assembly in Gel Systems</em><br>
+                    Lecturer, Department of Chemistry, Kulliyyah of Science, International Islamic University Malaysia
+                  </span>
+                </p>
+
+                <p><span class="f14px">Rattachai Pinchaipat</span><br>
+                  <span class="peopleText">
+                    PhD 2018<br>
+                    Thesis: <em>The Colloidal Glass Transition: A Non-Equilibrium Perspective</em><br>
+                    Lecturer, Department of Physics, Faculty of Science, Burapha University, Thailand
+                  </span>
+                </p>
+
+                <p><span class="f14px">Max Meissner</span><br>
+                  <span class="peopleText">
+                    PhD 2017.<br>
+                    Thesis: <em>Microfluidics on the colloidal scale</em><br>
+                    Postdoc at Warwick Physics with Vassily Kantsler.
+                  </span>
+                </p>
+
+                <p><span class="f14px">Rhiannon Pinney</span><br>
+                  <span class="peopleText">
+                    PhD 2017<br>
+                    Thesis: <em>Recasting a model atomistic glassformer into an effective system of icosahedra</em><br>
+                    Maths Teacher, Katharine Lady Berkeley School, Wootton-Under-Edge
+                  </span>
+                </p>
+
+                <p><span class="f14px">Andrew Dunleavy</span><br>
+                  <span class="peopleText">
+                    PhD 2015.<br>
+                    Thesis: <em>Applying Information Theory to Super-cooled Liquids</em><br>
+                    Masters in Complexity Science 2011.
+                  </span>
+                </p>
+
+                <p><span class="f14px">Jade Taffs</span><br>
+                  <span class="peopleText">
+                    PhD 2015.<br>
+                    Thesis: <em>Local structure in crystallization</em><br>
+                    BSc 2010. Analyst at HEFCE.
+                  </span>
+                </p>
+
+                <p><span class="f14px">Isla Zhang</span><br>
+                  <span class="peopleText">
+                    PhD 2014.<br>
+                    Thesis: <em>A Real-Space Study of Phase Behaviour and Slow Dynamics in Colloid-Polymer Mixtures</em>
+                  </span>
+                </p>
+
+                <p><span class="f14px">Alex Malins</span><br>
+                  <span class="peopleText">
+                    PhD 2013.<br>
+                    Thesis: <em>A Structural Approach to Glassy Systems</em><br>
+                    Masters in Complexity Science 2009. Postdoc at the Japanese Atomic Energy Authority, Kashiwa, Tokyo.
+                  </span>
+                </p>
+
+                <span class="f15px">Masters</span>
+                <p><span class="f14px">Georgia Evers</span><br><span class="peopleText">MSci 2019, RA in Royall Group</span></p>
+                <p><span class="f14px">Sam Griffiths</span><br><span class="peopleText">MSci 2016, PhD in Edinburgh with Wilson Poon</span></p>
+                <p><span class="f14px">Jun Dong</span><br><span class="peopleText">2015 Masters in Functional Nanomaterials, PhD in Royall group</span></p>
+                <p><span class="f14px">James Hicks</span><br><span class="peopleText">MSci 2015, Masters in Applied Mathematics at King's College London</span></p>
+                <p><span class="f14px">Amy Heward</span><br><span class="peopleText">MSci 2015, UK government</span></p>
+                <p><span class="f14px">Richard Buxton</span><br><span class="peopleText">MSci 2015, TeachFirst</span></p>
+                <p><span class="f14px">Lizzie Mould</span><br><span class="peopleText">MSci 2014, Masters by research in Bristol Chemistry</span></p>
+                <p><span class="f14px">Peter Crowther</span><br><span class="peopleText">MSci 2014, PhD in Royall group</span></p>
+                <p><span class="f14px">Ioatzin Rios de Anda</span><br><span class="peopleText">2014 Masters in Functional Nanomaterials, PhD in Royall group</span></p>
+                <p><span class="f14px">Nick Wood</span><br><span class="peopleText">2014 Masters in Functional Nanomaterials, PhD in Royall group</span></p>
+                <p><span class="f14px">Tony Cartwright</span><br><span class="peopleText">2013 Masters in Functional Nanomaterials, RA at Los Alamos</span></p>
+                <p><span class="f14px">Jamie Worth</span><br><span class="peopleText">2013 Masters in Functional Nanomaterials</span></p>
+                <p><span class="f14px">Andrew Gray</span><br><span class="peopleText">MSci 2013, Eng Doc in Birmingham</span></p>
+                <p><span class="f14px">Shelley Taylor</span><br><span class="peopleText">MSci 2012, PhD at Birmingham University Centre for Doctoral Training in Medical Imaging</span></p>
+                <p><span class="f14px">Maia Godonoga</span><br><span class="peopleText">Summer Student 2010, PhD with Jonathan Heddle, RIKEN, Tokyo</span></p>
+                <p><span class="f14px">Monica Moreno</span><br><span class="peopleText">Erasmus 2008, Lab manager in the Basque Country</span></p>
+                <p><span class="f14px">Rebecca Rice</span><br><span class="peopleText">BSc 2008 and Masters by Research 2009</span></p>
+            </div>
+
+        </div>
+
+        <!-- ROW 3: BOTTOM BOXES (Matched to indexNew.html) -->
+        <div class="bottom-row">
+          <div class="card small-box"><h3><a href="Work_nucleation.html">Nucleation</a></h3></div>
+          <div class="card small-box"><h3><a href="Work_glass.html">Glass Transition</a></h3></div>
+          <div class="card small-box"><h3><a href="Work_gels.html">Gel Collapse</a></h3></div>
+          <div class="card small-box"><h3>Fish</h3></div>
+          <div class="card small-box"><h3>Facemasks</h3></div>
+          <div class="card small-box"><h3>TCC</h3></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

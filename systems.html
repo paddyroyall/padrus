@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Paddy Royall</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Covers unvisited, visited, hover, and active states */
+        a, a:visited, a:hover, a:active {
+          color: inherit;          /* Uses the surrounding text color instead of blue/purple */
+          text-decoration: none;   /* Removes the underline */
+        }
+
+        /* Solid dark navy background */
+        body {
+            background-color: rgb(0, 6, 37);
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+
+        /* Main outer wrapper stacking all rows vertically */
+        .layout-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem; /* Distance between each row */
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 0.5rem;
+        }
+
+        /* Header Banner Container matched to Middle Row columns */
+        .header-banner {
+            display: flex;
+            gap: 4rem; /* Matches the exact gap between left and right columns */
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-col-1 {
+            width: 425px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-col-2 {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-banner img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Common Card Styling */
+        .card {
+            background-color: rgba(255, 255, 255, 0.06); /* Subtle contrast against rgb(0, 6, 37) */
+            padding: 0.75rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            overflow: auto;
+        }
+
+        /* ROW 1: 6 Small Boxes */
+        .top-row {
+            display: flex;
+            gap: 0.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .top-box {
+            flex: 1;
+            min-width: 50px;
+            height: 35px;
+            text-align: center;
+            padding: 0.4rem;
+        }
+
+        /* =========================================================
+           WIDE BANNER IMAGE (Below Header)
+           ========================================================= */
+        .wide-banner {
+            width: 80%;
+            height: 150px; /* Reduced by ~30% from 350px */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .wide-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* =========================================================
+           SECTION 2: MIDDLE SECTION (Rows of Text Left + Image Right)
+           ========================================================= */
+        .middle-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 80%;
+        }
+
+        .feature-row {
+            display: flex;
+            gap: 2rem;
+            width: 100%;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .text-side {
+            flex: 1;
+            min-width: 400px;
+            height: 250px;
+        }
+
+        .image-side {
+            flex: 1;
+            min-width: 300px;
+            height: 250px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .image-side img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ROW 3: Bottom Boxes */
+        .bottom-row {
+            display: flex;
+            gap: 1.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .small-box {
+            flex: 1;
+            min-width: 100px;
+            height: 60px;
+            text-align: center;
+        }
+
+        /* Typography */
+        h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+        p { font-size: 0.95rem; line-height: 1.4; }
+  </style>
+</head>
+
+<body>
+
+<div class="layout-wrapper">
+
+      <!-- ROW 1: 6 BOXES -->
+        <div class="top-row">
+          <div class="card top-box"><h3><a href="about.html">        About        </a></h3></div>
+          <div class="card top-box"><h3><a href="systems.html">      Systems      </a></h3></div>
+          <div class="card top-box"><h3><a href="news.html">         News         </a></h3></div>
+          <div class="card top-box"><h3><a href="group.html">        Group        </a></h3></div>
+          <div class="card top-box"><h3><a href="publications.html"> Publications </a></h3></div>
+        </div>
+
+        <!-- HEADER IMAGES (Matched to indexNew.html) -->
+        <div class="header-banner">
+            <div class="header-col-1">
+                <a href="indexNew.html">
+                    <img src="img/paddyRoyall.jpg" width="402" height="156" alt="Paddy Royall">
+                </a>
+            </div>
+            <div class="header-col-2">
+                <img src="img/smile.gif" width="575" height="183" alt="Smile">
+            </div>
+        </div>
+
+        <!-- WIDE BANNER IMAGE -->
+        <div class="wide-banner">
+            <img src="img/figLengthscalesWeb.jpg" alt="We study collective behaviour across a range of lengthscales">
+        </div>
+
+        <!-- SECTION 2: 4 ROWS OF TEXT (LEFT) + IMAGE (RIGHT) -->
+        <div class="middle-section">
+
+            <!-- Middle Row 1 -->
+            <div class="feature-row">
+                <div class="card text-side">
+                  <h3>Real space analysis across the lengthscales.</h3>
+                  <p>Our work reveals common behaviour in systems across a surprising
+                  range of lengthscales. Our experimental work
+                  ranges from protein molecules to collective behaviour in
+                  <a href="fish.html"> fish </a>.
+                  <br>
+                  <br>
+                  Colloids have long been known to exhibit the same
+                  thermodyanmics as atoms. The lab began by studying colloidal liquids in
+                  real space and how they form excellent models of (classical) simple liquids.</p>
+                </div>
+
+                <div class="image-side">
+                    <img src="img/synthesis.jpg" alt="Synthesis of model colloids">
+                </div>
+            </div>
+
+            <!-- Middle Row 2 -->
+            <div class="feature-row">
+                <div class="card text-side">
+                  <p>Although their interactions can be tremendously complex,
+                  proteins can also behave like colloids (and simple molecules). For example,
+                  we showed how proteins can behave just like colloids in the shape of spherocylinders
+                  <a href="img/publications/2021/chengRoyallProteinColloidLimitJCP2021.pdf">Link to paper</a>.
+                  </p>
+                  <br>
+                  <p>
+                  <em>Active colloids</em> in which each particle is self-propelled can exhibit similar
+                  collective behaviour to animal systems.
+                  <a href="img/publications/2020/mauleonAmievaMosayebiHallettLiverpoolAmeobaePRE2020.pdf">Link to paper</a>.
+                  At larger lengthscales, we study the collective behaviour in fish, with precisely the same
+                  analysis that we use for the colloids and molecules, demonstrating
+                  <em>common behaviour across lengthscales</em>.
+                  </p>
+                </div>
+
+                <div class="image-side">
+                    <img src="img/robotsCropt.jpg" alt="AI for determination of particle coordinates">
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <!-- ROW 3: BOTTOM BOXES -->
+        <div class="bottom-row">
+          <div class="card small-box"><h3><a href="nucleation.html">Nucleation       </a></h3></div>
+          <div class="card small-box"><h3><a href="glass.html">     Glass Transition </a></h3></div>
+          <div class="card small-box"><h3><a href="gels.html">      Gel Collapse     </a></h3></div>
+          <div class="card small-box"><h3><a href="fish.html">      Fish             </a></h3></div>
+          <div class="card small-box"><h3><a href="facemasks.html"> Facemasks        </a></h3></div>
+          <div class="card small-box"><h3><a href="tcc.html">       TCC              </a></h3></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

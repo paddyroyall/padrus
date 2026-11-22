@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Paddy Royall - News</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Covers unvisited, visited, hover, and active states */
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        /* Solid dark navy background matching glassNov26 / publications.html */
+        body {
+            background-image: url('img/figHSCover.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+
+        /* Main outer wrapper stacking all rows vertically */
+        .layout-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 0.5rem;
+        }
+
+        /* Header Banner Container matched to glassNov26 / publications.html */
+        .header-banner {
+            display: flex;
+            gap: 4rem;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-col-1 {
+            width: 425px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-col-2 {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-banner img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Common Card Styling */
+        .card {
+            background-color: rgba(0, 6, 37, 0.2);
+            padding: 0.75rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* ROW 1: Top Boxes */
+        .top-row {
+            display: flex;
+            gap: 0.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .top-box {
+            flex: 1;
+            min-width: 50px;
+            height: 35px;
+            text-align: center;
+            padding: 0.4rem;
+        }
+
+        /* =========================================================
+           MAIN CONTENT (Aligned to Match Header/GlassNov26)
+           ========================================================= */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+            align-items: center;
+        }
+
+        .content-card {
+            width: 100%;
+            max-width: 965px;
+            padding: 1.5rem 2rem;
+        }
+
+        .content-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .content-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .content-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Side-by-side text + image layout aligned flush with surrounding text */
+        .news-split {
+            display: flex;
+            gap: 1.75rem;
+            align-items: flex-start;
+        }
+
+        .news-text-col {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .news-image-col {
+            flex: 0 0 320px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .news-image-col img {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+
+        @media (max-width: 720px) {
+            .news-split {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .news-image-col {
+                flex: none;
+                max-width: 100%;
+            }
+
+            .news-image-col img {
+                max-width: 100%;
+            }
+        }
+
+        .figure-box {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.04);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+
+        .figure-caption {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.85);
+            text-align: center;
+            max-width: 680px;
+            margin-bottom: 0 !important;
+        }
+
+        .ref-list {
+            padding-left: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .ref-list li {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .ref-list a {
+            color: #7cc4ff;
+            text-decoration: underline;
+            margin-left: 0.25rem;
+        }
+
+        .ref-list a:hover {
+            color: #ffffff;
+        }
+
+        /* ROW 3: Bottom Boxes */
+        .bottom-row {
+            display: flex;
+            gap: 1.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 965px;
+        }
+
+        .small-box {
+            flex: 1;
+            min-width: 100px;
+            height: 60px;
+            text-align: center;
+        }
+
+        /* Typography */
+        h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+  </style>
+</head>
+
+<body>
+
+<div class="layout-wrapper">
+
+      <!-- ROW 1: TOP BOXES -->
+      <div class="top-row">
+        <div class="card top-box"><h3><a href="about.html">        About        </a></h3></div>
+        <div class="card top-box"><h3><a href="systems.html">      Systems      </a></h3></div>
+        <div class="card top-box"><h3><a href="news.html">         News         </a></h3></div>
+        <div class="card top-box"><h3><a href="group.html">        Group        </a></h3></div>
+        <div class="card top-box"><h3><a href="publications.html"> Publications </a></h3></div>
+      </div>
+
+      <!-- HEADER IMAGES -->
+      <div class="header-banner">
+          <div class="header-col-1">
+              <a href="indexNew.html">
+                  <img src="img/paddyRoyall.jpg" width="402" height="156" alt="Paddy Royall">
+              </a>
+          </div>
+          <div class="header-col-2">
+              <img src="img/smile.gif" width="575" height="183" alt="Smile">
+          </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="content-section">
+
+          <div class="card content-card">
+              <h1>
+                <center>
+                News!
+              </center>
+             </h1>
+
+              <p>
+                <br>
+                <h3>Autumn 2026</h3>
+                <br>
+                Welcome to Masters' students Elisha Cagiuat and Manas Chopade who are working on
+                &quot;Why are Shells and Coral different?&quot; <a href="nucleation.html">nucleation</a> ...
+                <br>
+                <br>
+                ...and to James Boss and Thehan Bilyard who are exploring further whether
+                &quot;Three is a crowd holds for zebrafish&quot;<a href="fish.html">fish</a>.
+              </p>
+
+              <p>
+                <br><br>
+                <h3>Summer 2026</h3>
+                <br>
+                With Malcolm Faers we recieve the Society for Chemical Industry arward for Innovation at the
+                SCI annual awards, held at the House of Lords.
+                <br>
+                <br>
+                <b>Addressing the hard sphere nucleation discrepancy.</b>
+                Predicting the rate of crystal nucleation is tremendously difficult in general. One might very reasonably imagine that in well-controlled
+                model systems lke colloidal hard spheres would offer a platform where accurate prediction might be made.
+                And yet, since the pioneering work of Stefan Auer and Daan Frenkel 25 years ago, the hard sphere nucleation
+                discrepancy has remained an unsolved problem.
+                <br>
+                <br>
+                With our collaborators Antoine Castagn&egrave;de and Frank Smallenburg, we have carried out the first experiments
+                measuring and predicting the free energy of formation of crystal nuclei
+                in <em> any </em> system as far as we are aware. This casts the spolight on earlier experiments
+                as a likely cause for the discrepancy. Congratulations to Lars K&uuml;rten for the heroic experiments!
+                <a href="https://www.science.org/doi/abs/10.1126/sciadv.aec8906?referrer=https%3A%2F%2Fscholar.google.co.uk%2F"Download PDF target="_blank">Link to journal (open access).</a>
+              </p>
+
+
+              <div>
+                <br>
+                <br>
+                <h3>Spring 2026</h3>
+                <br>
+                <div class="news-split">
+                  <div class="news-text-col">
+                    <p>
+                      We are very excited to publish &quot;Observing the mechanism of delayed collapse in colloidal gels:
+                      Yielding while becoming stronger&quot; in <em>Proc. Nat. Acad. Sci.</em>with our collaborators Malcolm Faers (Bayer), Rob Jack (Cambridge) and Tannie Liverpool (Bristol).
+                      Congratulations to Rui Cheng for her hard work and perseverance with this story.
+                      For decades, the mechanism by which colloid gels -- which become strong over time -- and then suddently collapse catastropghically
+                      has remained eluisive. Rui developed a new form of imaging which we call multiscale confocal micrpsscoy that reveals the
+                      microscopic structure theough an entire macroscopic sample.
+                      <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2528499123"Download PDF target="_blank">Link to journal</a>
+                    </p>
+                  </div>
+                  <div class="news-image-col">
+                    <img src="img/viridis_gel_all3.jpg" alt="Delayed collapse in colloidal gels">
+                  </div>
+                </div>
+                <br>
+                <p>
+                  Paddy Royall starts a Leverhulme Visiting Professorship at the University or Warwick, UK.
+                  This is to work with Profs. Livia Bartok-Partay, David Quigley and Matthew Turner to bring higher-order structrural analysis
+                  using the <a href="tcc.html"> Topological Cluster Classification </a> to a new set of systems.
+                </p>
+              </div>
+
+              <p>
+              <br>
+              <br>
+              <h3>Winter 2025-2026</h3>
+              <br>
+
+                Congratulations to Dr Lars K&uuml;rten who very successfully defended his thesis
+                &quot;Direct Visualisation of Nucleation in Colloidal Model Systems&quot;.
+                This is a great thesis, more details are <a href="nucleation.html"> here.</a>
+              </p>
+              <br>
+              <br>
+              <p>
+              <h3>Upcoming events</h3>
+                <br>
+                CECAM meeting &quot;Self-assembly of materials: merging direct experiments with simulations at different resolutions and data science techniques&quot;.
+                <br>
+                <br>
+                March 10th-12th 2027. Jointly organised with Rocio Semino (Sorbonne) and Romain Dupuis (Montpellier).
+                <a href="https://www.cecam.org/workshop-details/self-assembly-of-materials-merging-direct-experiments-with-simulations-at-different-resolutions-and-data-science-techniques-1522"> Link to website. </a>
+              </p>
+
+          </div>
+
+      </div>
+
+      <!-- ROW 3: BOTTOM BOXES -->
+      <div class="bottom-row">
+        <div class="card small-box"><h3><a href="nucleation.html">Nucleation       </a></h3></div>
+        <div class="card small-box"><h3><a href="glass.html">     Glass Transition </a></h3></div>
+        <div class="card small-box"><h3><a href="gels.html">      Gel Collapse     </a></h3></div>
+        <div class="card small-box"><h3><a href="fish.html">      Fish             </a></h3></div>
+        <div class="card small-box"><h3><a href="facemasks.html"> Facemasks        </a></h3></div>
+        <div class="card small-box"><h3><a href="tcc.html">       TCC              </a></h3></div>
+      </div>
+
+</div>
+
+</body>
+</html>

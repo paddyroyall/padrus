@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Paddy Royall - Gels</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Covers unvisited, visited, hover, and active states */
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        /* Solid dark navy background matching publications.html */
+        body {
+            background-color: rgb(0, 6, 37);
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+
+        /* Main outer wrapper stacking all rows vertically */
+        .layout-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 0.5rem;
+        }
+
+        /* Header Banner Container matched to publications.html */
+        .header-banner {
+            display: flex;
+            gap: 4rem;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-col-1 {
+            width: 425px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-col-2 {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-banner img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Common Card Styling */
+        .card {
+            background-color: rgba(255, 255, 255, 0.06);
+            padding: 0.75rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* ROW 1: Top Boxes */
+        .top-row {
+            display: flex;
+            gap: 0.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .top-box {
+            flex: 1;
+            min-width: 50px;
+            height: 35px;
+            text-align: center;
+            padding: 0.4rem;
+        }
+
+        /* =========================================================
+           MAIN CONTENT (Aligned to Match Header/Publications)
+           ========================================================= */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+            align-items: center;
+        }
+
+        .content-card {
+            width: 100%;
+            max-width: 965px;
+            padding: 1.5rem 2rem;
+        }
+
+        .content-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .content-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .content-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .figure-box {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.04);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .figure-box img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+
+        .ref-list {
+            padding-left: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .ref-list li {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .ref-list a {
+            color: #7cc4ff;
+            text-decoration: underline;
+            margin-left: 0.25rem;
+        }
+
+        .ref-list a:hover {
+            color: #ffffff;
+        }
+
+        /* ROW 3: Bottom Boxes */
+        .bottom-row {
+            display: flex;
+            gap: 1.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 965px;
+        }
+
+        .small-box {
+            flex: 1;
+            min-width: 100px;
+            height: 60px;
+            text-align: center;
+        }
+
+        /* Typography */
+        h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+  </style>
+</head>
+
+<body>
+
+<div class="layout-wrapper">
+
+      <!-- ROW 1: TOP BOXES -->
+      <div class="top-row">
+        <div class="card top-box"><h3><a href="about.html">        About        </a></h3></div>
+        <div class="card top-box"><h3><a href="systems.html">      Systems      </a></h3></div>
+        <div class="card top-box"><h3><a href="news.html">         News         </a></h3></div>
+        <div class="card top-box"><h3><a href="group.html">        Group        </a></h3></div>
+        <div class="card top-box"><h3><a href="publications.html"> Publications </a></h3></div>
+      </div>
+
+      <!-- HEADER IMAGES -->
+      <div class="header-banner">
+          <div class="header-col-1">
+              <a href="indexNew.html">
+                  <img src="img/paddyRoyall.jpg" width="402" height="156" alt="Paddy Royall">
+              </a>
+          </div>
+          <div class="header-col-2">
+              <img src="img/smile.gif" width="575" height="183" alt="Smile">
+          </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="content-section">
+
+          <div class="card content-card">
+              <h2>Colloidal Gels: Structure and Mysteries</h2>
+
+              <p>
+                The equilibrium behaviour of colloidal “sticky spheres” is well understood [2].
+                Yet out of equilibrium, mysteries remain. Far-from equilibrium,
+                sticky spheres can form a gel, whose solidity is due to rigid minimum energy
+                clusters [3]. As gels age, they stiffen due to coarsening of the gel network [4].
+                Remarkably, after a period of increasing strength, with no visible macroscopic change,
+                gels undergo delayed catastrophic gravitational collapse.
+              </p>
+              <br>
+              <br>
+              <p>
+                We can study the microscopic mechanisms of yielding using both experiments
+                and computer simulation [4,5]. We have also developed an experimental system to
+                determine forces between particles, which reveals the local stress tensor [6].
+                However, such microscopic measures of yielding cannot address the challenge of
+                macroscopic samples which undergo delayed collapse after a period where
+                nothing seems to happen for weeks or even years.
+              </p>
+              <br>
+              <br>
+              <p>
+                We have developed a new technique to address this needle-in-haystack
+                problem: multiscale confocal microscopy. Here we image an entire bulk sample
+                with microscopic resolution. We reveal the nature of precursors to the sudden
+                collapse. These are channels of solvent which form at the top of the gel,
+                overcome the yield stress and make their way through the bulk of the material.
+                This leads ultimately to a runaway increase in flow rate and gel collapse [7].
+              </p>
+
+              <div class="figure-box">
+                <img src="img/gelCoordinates.jpg" alt="The microscopic structure of a colloidal gel">
+              </div>
+
+
+          </div>
+
+          <div class="card content-card">
+              <h2>References</h2>
+              <ol class="ref-list">
+                <li>
+                  &quot;Complex Plasmas and Colloidal Dispersions: Particle-resolved Studies of Classical Liquids and Solids&quot;<br>
+                  Ivlev A, L&ouml;wen, H, Morfill G and Royall CP. World Scientific. (2012).
+                </li>
+                <li>
+                    Royall CP, Faers MA, Fussell SL and Hallett JE,
+                    &quot;Real Space Analysis of Colloidal Gels: Triumphs, Challenges and Future Directions&quot;<br>
+                    J. Phys.: Condens. Matter, 33 453002 (2021).
+                    <a href="img/publications/2021/royallFaersHallettFussellGelsJPCM2021.pdf">PDF download</a>.
+                </li>
+                <li>
+                    Royall CP, Williams SR, Ohtsuka, T and Tanaka, H,
+                    &quot;Direct observation of a local structural mechanism for dynamical arrest&quot;,
+                    Nature Materials, <strong>7</strong>, 556-561 (2008).
+                    <a href="http://www.nature.com/nmat/journal/v7/n7/pdf/nmat2219.pdf" target="_blank">PDF download from Nature website</a>.
+                </li>
+                <li>
+                    Bhaumik H, Hallett JE, Liverpool TB, Jack RL and Royall CP,<br>
+                    &quot;Cyclically sheared colloidal gels: structural change and delayed failure time&quot;<br>
+                    Soft Matter 21 8555 (2025).<br>
+                    <a href="img/publications/2025bhaumikHallettLiverpoolJackRoyallCyclicallyShearedGelsSoftMatter2025.pdf" target="_blank">PDF download.</a>
+                </li>
+                <li>
+                    Thijssen, K, Liverpool TB, Royall CP, Jack RL<br>
+                    &quot;Necking and failure of a colloidal gel arm: signatures of yielding on different length scales&quot;<br>
+                    Soft Matter 19 7412-7428 (2023).
+                    <a href="img/publications/2023/thijssenLiverpoolRoyallJackNeckingSoftMatter2023.pdf">link to PDF</a>
+                </li>
+                <li>
+                    Dong J, Turci F, Jack RL, Faers MA and Royall CP,<br>
+                    &quot;Direct Imaging of Contacts and Forces in Colloidal Gels&quot;<br>
+                    J. Chem. Phys. 156 214907 (2022).
+                    <a href="img/publications/2022/dongTurciFaersJackRoyallCanardJCP2022.pdf">link to PDF</a>
+                </li>
+                <li>
+                    Cheng R, Faers M, Turci F, Mauleon-Amieva A, Liverpool TB, Jack RL and Royall CP,
+                    &quot;Observing the mechanism of delayed collapse in colloidal gels: Yielding while becoming stronger&quot;<br>
+                    Proc. Nat. Acad. Sci. <strong>123</strong> e2528499123 (2026)
+                    <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2528499123" target="_blank">Link to journal</a>
+                </li>
+              </ol>
+          </div>
+
+      </div>
+
+      <!-- ROW 3: BOTTOM BOXES -->
+      <div class="bottom-row">
+        <div class="card small-box"><h3><a href="nucleation.html">Nucleation       </a></h3></div>
+        <div class="card small-box"><h3><a href="glass.html">     Glass Transition </a></h3></div>
+        <div class="card small-box"><h3><a href="gels.html">      Gel Collapse     </a></h3></div>
+        <div class="card small-box"><h3><a href="fish.html">      Fish             </a></h3></div>
+        <div class="card small-box"><h3><a href="facemasks.html"> Facemasks        </a></h3></div>
+        <div class="card small-box"><h3><a href="tcc.html">       TCC              </a></h3></div>
+      </div>
+
+</div>
+
+</body>
+</html>

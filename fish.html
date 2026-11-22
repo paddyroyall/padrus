@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Paddy Royall - Collective Behaviour of Zebrafish</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Covers unvisited, visited, hover, and active states */
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        /* Solid dark navy background matching glassNov26 / publications.html */
+        body {
+            background-color: rgb(0, 6, 37);
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+
+        /* Main outer wrapper stacking all rows vertically */
+        .layout-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 0.5rem;
+        }
+
+        /* Header Banner Container matched to glassNov26 / publications.html */
+        .header-banner {
+            display: flex;
+            gap: 4rem;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-col-1 {
+            width: 425px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-col-2 {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-banner img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Common Card Styling */
+        .card {
+            background-color: rgba(255, 255, 255, 0.06);
+            padding: 0.75rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* ROW 1: Top Boxes */
+        .top-row {
+            display: flex;
+            gap: 0.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .top-box {
+            flex: 1;
+            min-width: 50px;
+            height: 35px;
+            text-align: center;
+            padding: 0.4rem;
+        }
+
+        /* =========================================================
+           MAIN CONTENT (Aligned to Match Header/GlassNov26)
+           ========================================================= */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+            align-items: center;
+        }
+
+        .content-card {
+            width: 100%;
+            max-width: 965px;
+            padding: 1.5rem 2rem;
+        }
+
+        .content-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .content-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .content-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .figure-box {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.04);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+
+        .figure-caption {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.85);
+            text-align: center;
+            max-width: 680px;
+            margin-bottom: 0 !important;
+        }
+
+        .ref-list {
+            padding-left: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .ref-list li {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .ref-list a {
+            color: #7cc4ff;
+            text-decoration: underline;
+            margin-left: 0.25rem;
+        }
+
+        .ref-list a:hover {
+            color: #ffffff;
+        }
+
+        /* ROW 3: Bottom Boxes */
+        .bottom-row {
+            display: flex;
+            gap: 1.5rem;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 965px;
+        }
+
+        .small-box {
+            flex: 1;
+            min-width: 100px;
+            height: 60px;
+            text-align: center;
+        }
+
+        /* Typography */
+        h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+  </style>
+</head>
+
+<body>
+
+<div class="layout-wrapper">
+
+      <!-- ROW 1: TOP BOXES -->
+      <div class="top-row">
+        <div class="card top-box"><h3><a href="about.html">        About        </a></h3></div>
+        <div class="card top-box"><h3><a href="systems.html">      Systems      </a></h3></div>
+        <div class="card top-box"><h3><a href="news.html">         News         </a></h3></div>
+        <div class="card top-box"><h3><a href="group.html">        Group        </a></h3></div>
+        <div class="card top-box"><h3><a href="publications.html"> Publications </a></h3></div>
+      </div>
+
+      <!-- HEADER IMAGES -->
+      <div class="header-banner">
+          <div class="header-col-1">
+              <a href="indexNew.html">
+                  <img src="img/paddyRoyall.jpg" width="402" height="156" alt="Paddy Royall">
+              </a>
+          </div>
+          <div class="header-col-2">
+              <img src="img/smile.gif" width="575" height="183" alt="Smile">
+          </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="content-section">
+
+          <div class="card content-card">
+              <h2>Collective Behaviour of Zebrafish</h2>
+
+              <p>
+                Recent years have seen the emergence of a new understanding of collective behavior in biological systems, and its connection/mapping with more familiar systems described by statistical mechanics. The field has been dominated by two systems - flocking birds (in particular Starlings) and swarming midges. So-called agent-based models hold promise for reproducing collective behavior in these systems, where the interactions are profoundly different. Birds interact topologically - with a fixed group of neighbors, while midges seem to interact over a certain distance regardless of the number of neighbours. The mapping of statistical mechanical concepts to these systems has yielding intriguing results, such as a (non-equilibrium) chemical potential for midges.[cite: 6]
+              </p>
+
+              <div class="figure-box">
+                <img src="img/work/fishCorrelations.png" width="300" height="300" alt="Spatial distribution of the nearest neighbour of the zebrafish">
+                <p class="figure-caption">
+                  Spatial distribution of the nearest negibour of the zebrafish.
+                  Top: in a group of 50 fish. Bottom: in the case of 2 fish.
+                  Left: XY plane. Right: XZ plane.[cite: 6]
+                </p>
+              </div>
+
+              <p>
+                However, nature is not limited to two systems, of course. Fish exhibit an entirely different scenario. For example, hydrodynamic coupling between individuals may have a profound effect upon the dynamics, yet remains almost completely unexplored in a biological system . We use zebrafish as a lab-based model system, and have carried out what we believe to be the first 3d tracking studies, which reveal structural and dynamical information, comparable to that obtained in colloids.[cite: 6]
+              </p>
+          </div>
+
+          <div class="card content-card">
+              <h2>References</h2>
+              <ol class="ref-list">
+                <li>
+                    Zampetaki A, Yang, Y, Loewen, H and Royall CP,<br>
+                    &quot;Dynamical Order and Many-Body Correlations in Zebrafish show that Three is a Crowd&quot;<br>
+                    Nature Commun, 15 2591 (2024).[cite: 3]
+                    <a href="https://www.nature.com/articles/s41467-024-46426-1">link to open access site.</a>
+                </li>
+                <li>
+                    Yang Y, Kawafi A, Tong Q, Hammond CL, Kague E and Royall CP,<br>
+                    &quot;Tuning Collective Behaviour in Zebrafish with Genetic Modification&quot;<br>
+                    PLOS Comp. Biol. 20 e1012034 (2024).<br>
+                    <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012034"
+>link to open access site.</a>
+                </li>
+                <li>
+                  Yang Y, Turci F, Kague E, Hammond CL, Russo J and Royall CP,
+                  "Dominating Lengthscales of Zebrafish Collective Behaviour",
+                  PLOS Comp. Biol. 18 e1009394 (2022)
+                  <a href="img/publications/2022/yangAndTheGangLengthscalesPLOSCompBiol2022.pdf">link to PDF</a>[cite: 6]
+                </li>
+              </ol>
+          </div>
+
+      </div>
+
+      <!-- ROW 3: BOTTOM BOXES -->
+      <div class="bottom-row">
+        <div class="card small-box"><h3><a href="nucleation.html">Nucleation       </a></h3></div>
+        <div class="card small-box"><h3><a href="glass.html">     Glass Transition </a></h3></div>
+        <div class="card small-box"><h3><a href="gels.html">      Gel Collapse     </a></h3></div>
+        <div class="card small-box"><h3><a href="fish.html">      Fish             </a></h3></div>
+        <div class="card small-box"><h3><a href="facemasks.html"> Facemasks        </a></h3></div>
+        <div class="card small-box"><h3><a href="tcc.html">       TCC              </a></h3></div>
+      </div>
+
+</div>
+
+</body>
+</html>
